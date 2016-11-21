@@ -10,6 +10,7 @@ import android.view.View;
 import com.liuhw.rxanroiddemo.creating.CreateActivity;
 import com.liuhw.rxanroiddemo.creating.DeferActivity;
 import com.liuhw.rxanroiddemo.creating.EmptyAndErrorAndNeverActivity;
+import com.liuhw.rxanroiddemo.creating.FromActivity;
 import com.liuhw.rxanroiddemo.creating.JustActivity;
 
 public class CreatingObservablesActivity extends BaseActivity {
@@ -36,6 +37,7 @@ public class CreatingObservablesActivity extends BaseActivity {
                 classes = EmptyAndErrorAndNeverActivity.class;
                 break;
             case R.id.btn_operator_from:
+                classes = FromActivity.class;
                 break;
             case R.id.btn_operator_interval:
                 break;

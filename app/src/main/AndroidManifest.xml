@@ -33,6 +33,8 @@
         </activity>
         <activity android:name=".creating.EmptyAndErrorAndNeverActivity">
         </activity>
+        <activity android:name=".creating.FromActivity">
+        </activity>
     </application>
 
 </manifest>
