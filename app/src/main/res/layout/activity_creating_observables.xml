@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_creating_observables"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.liuhw.rxanroiddemo.MainActivity">
+    tools:context="com.liuhw.rxanroiddemo.CreatingObservablesActivity">
 
     <include
         layout="@layout/layout_toobar"/>
@@ -21,82 +21,77 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btn_operator_creating_observables"
+                android:id="@+id/btn_operator_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Creating Observables"/>
+                android:text="create"/>
 
             <Button
-                android:id="@+id/btn_operator_transforming_bservables"
+                android:id="@+id/btn_operator_defer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Transforming Observables"/>
+                android:text="defer"/>
 
             <Button
-                android:id="@+id/btn_operator_filtering_observables"
+                android:id="@+id/btn_operator_empty_never_throw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Filtering Observables"/>
+                android:text="Empty/Never/Throw"/>
 
             <Button
-                android:id="@+id/btn_operator_combining_observables"
+                android:id="@+id/btn_operator_from"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Combining Observables"/>
+                android:text="from"/>
 
             <Button
-                android:id="@+id/btn_operator_error_handling"
+                android:id="@+id/btn_operator_interval"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Error Handling"/>
+                android:text="interval"/>
 
             <Button
-                android:id="@+id/btn_operator_observable_utility"
+                android:id="@+id/btn_operator_just"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Observable Utility"/>
+                android:text="just"/>
 
             <Button
-                android:id="@+id/btn_operator_conditional_boolean"
+                android:id="@+id/btn_operator_range"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Conditional and Boolean"/>
-
+                android:text="range"/>
             <Button
-                android:id="@+id/btn_operator_mathematical_aggregate"
+                android:id="@+id/btn_operator_repeat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Mathematical and Aggregate"/>
+                android:text="repeat"/>
+
 
             <Button
-                android:id="@+id/btn_operator_backpressure"
+                android:id="@+id/btn_operator_start"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Backpressure"/>
+                android:text="start"/>
 
             <Button
-                android:id="@+id/btn_operator_connectable_observable"
+                android:id="@+id/btn_operator_timer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Connectable Observable"/>
-
-            <Button
-                android:id="@+id/btn_operator_to_convert_observables"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="to Convert Observables"
-                android:onClick="onClick"/>
+                android:text="timer"/>
 
         </LinearLayout>
     </ScrollView>
+
+
 </LinearLayout>
