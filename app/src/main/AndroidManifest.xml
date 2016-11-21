@@ -31,6 +31,8 @@
         </activity>
         <activity android:name=".creating.JustActivity">
         </activity>
+        <activity android:name=".creating.EmptyAndErrorAndNeverActivity">
+        </activity>
     </application>
 
 </manifest>

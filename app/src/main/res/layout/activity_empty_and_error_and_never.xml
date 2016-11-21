@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_empty_and_error_and_never"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liuhw.rxanroiddemo.creating.EmptyAndErrorAndNeverActivity">
+
+    <include
+        layout="@layout/layout_toobar"/>
+
+    <Button
+        android:id="@+id/btn_empty_observable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="empty a observable"/>
+
+    <Button
+        android:id="@+id/btn_error_observable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="error a observable"/>
+
+    <Button
+        android:id="@+id/btn_never_observable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="never a observable"/>
+
+
+
+</LinearLayout>
