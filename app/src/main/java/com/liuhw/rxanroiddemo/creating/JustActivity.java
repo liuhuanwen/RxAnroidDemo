@@ -1,6 +1,5 @@
 package com.liuhw.rxanroiddemo.creating;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -10,37 +9,31 @@ import com.liuhw.rxanroiddemo.R;
 
 import rx.Observable;
 import rx.Subscriber;
-import rx.functions.Func0;
 
 /**
- * defer操作符，每一次订阅，会创建一个新的observable
+ * just 是最常见的操作符，用来创建一个observable
  * */
-public class DeferActivity extends BaseActivity {
+public class JustActivity extends BaseActivity {
 
-    private TextView mTvDeferResult;
+    private TextView mTvJustResult;
     private StringBuilder sb = new StringBuilder();
-    Observable<Long> obs = Observable.defer(new Func0<Observable<Long>>() {
-        @Override
-        public Observable<Long> call() {
-            return Observable.just(System.currentTimeMillis());
-        }
-    });
+    private Observable<Long> obs = Observable.just(System.currentTimeMillis());;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_defer);
+        setContentView(R.layout.activity_just);
         if (mActionBar != null) {
-            mActionBar.setTitle("defer operator");
+            mActionBar.setTitle("just operator");
         }
-        mTvDeferResult = (TextView) findViewById(R.id.tv_defer_result);
+        mTvJustResult = (TextView) findViewById(R.id.tv_just_result);
     }
 
     public void onClick(View view) {
         obs.subscribe(new Subscriber<Long>() {
             @Override
             public void onCompleted() {
-                mTvDeferResult.setText(sb.toString());
+                mTvJustResult.setText(sb.toString());
             }
 
             @Override
@@ -49,8 +42,8 @@ public class DeferActivity extends BaseActivity {
             }
 
             @Override
-            public void onNext(Long aLong) {
-                sb.append(aLong).append("\n");
+            public void onNext(Long along) {
+                sb.append(along).append("\n");
             }
         });
     }

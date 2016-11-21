@@ -29,6 +29,8 @@
             android:name=".creating.DeferActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity android:name=".creating.JustActivity">
+        </activity>
     </application>
 
 </manifest>

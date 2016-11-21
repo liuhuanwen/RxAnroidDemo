@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.liuhw.rxanroiddemo.creating.CreateActivity;
 import com.liuhw.rxanroiddemo.creating.DeferActivity;
+import com.liuhw.rxanroiddemo.creating.JustActivity;
 
 public class CreatingObservablesActivity extends BaseActivity {
 
@@ -37,6 +38,7 @@ public class CreatingObservablesActivity extends BaseActivity {
             case R.id.btn_operator_interval:
                 break;
             case R.id.btn_operator_just:
+                classes = JustActivity.class;
                 break;
             case R.id.btn_operator_range:
                 break;
