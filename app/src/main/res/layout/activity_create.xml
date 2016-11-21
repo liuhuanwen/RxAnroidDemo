@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:id="@+id/activity_create"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.liuhw.rxanroiddemo.creating.CreateActivity">
 
     <include
         layout="@layout/layout_toobar"/>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btn_create_observable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="create a observable"/>
+
+    <TextView
+        android:id="@+id/tv_create_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"/>
+
+</LinearLayout>
