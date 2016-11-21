@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_interval"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liuhw.rxanroiddemo.creating.IntervalActivity">
+
+    <include
+        layout="@layout/layout_toobar"/>
+
+    <Button
+        android:id="@+id/btn_interval_observable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="interval a observable"/>
+
+    <TextView
+        android:id="@+id/tv_interval_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"/>
+</LinearLayout>

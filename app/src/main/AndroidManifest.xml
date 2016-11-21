@@ -35,6 +35,8 @@
         </activity>
         <activity android:name=".creating.FromActivity">
         </activity>
+        <activity android:name=".creating.IntervalActivity">
+        </activity>
     </application>
 
 </manifest>
