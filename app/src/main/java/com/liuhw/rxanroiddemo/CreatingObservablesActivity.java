@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.liuhw.rxanroiddemo.creating.CreateActivity;
+import com.liuhw.rxanroiddemo.creating.DeferActivity;
 
 public class CreatingObservablesActivity extends BaseActivity {
 
@@ -21,11 +22,13 @@ public class CreatingObservablesActivity extends BaseActivity {
     }
 
     public void onClick(View view) {
+        Class classes = null;
         switch (view.getId()) {
             case R.id.btn_operator_create:
-                startActivity(new Intent(this, CreateActivity.class));
+                classes = CreateActivity.class;
                 break;
             case R.id.btn_operator_defer:
+                classes = DeferActivity.class;
                 break;
             case R.id.btn_operator_empty_never_throw:
                 break;
@@ -44,5 +47,6 @@ public class CreatingObservablesActivity extends BaseActivity {
             case R.id.btn_operator_timer:
                 break;
         }
+        startActivity(new Intent(this, classes));
     }
 }

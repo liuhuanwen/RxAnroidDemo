@@ -25,6 +25,10 @@
             android:name=".creating.CreateActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".creating.DeferActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
