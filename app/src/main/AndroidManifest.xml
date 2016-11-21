@@ -41,6 +41,8 @@
         </activity>
         <activity android:name=".creating.RepeatActivity">
         </activity>
+        <activity android:name=".creating.TimerActivity">
+        </activity>
     </application>
 
 </manifest>

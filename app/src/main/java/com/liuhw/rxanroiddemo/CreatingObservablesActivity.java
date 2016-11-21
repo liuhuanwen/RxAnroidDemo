@@ -15,6 +15,7 @@ import com.liuhw.rxanroiddemo.creating.IntervalActivity;
 import com.liuhw.rxanroiddemo.creating.JustActivity;
 import com.liuhw.rxanroiddemo.creating.RangeAcitivity;
 import com.liuhw.rxanroiddemo.creating.RepeatActivity;
+import com.liuhw.rxanroiddemo.creating.TimerActivity;
 
 public class CreatingObservablesActivity extends BaseActivity {
 
@@ -54,9 +55,8 @@ public class CreatingObservablesActivity extends BaseActivity {
             case R.id.btn_operator_repeat:
                 classes = RepeatActivity.class;
                 break;
-            case R.id.btn_operator_start:
-                break;
             case R.id.btn_operator_timer:
+                classes = TimerActivity.class;
                 break;
         }
         startActivity(new Intent(this, classes));
