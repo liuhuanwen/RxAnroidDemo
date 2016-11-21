@@ -13,6 +13,7 @@ import com.liuhw.rxanroiddemo.creating.EmptyAndErrorAndNeverActivity;
 import com.liuhw.rxanroiddemo.creating.FromActivity;
 import com.liuhw.rxanroiddemo.creating.IntervalActivity;
 import com.liuhw.rxanroiddemo.creating.JustActivity;
+import com.liuhw.rxanroiddemo.creating.RangeAcitivity;
 
 public class CreatingObservablesActivity extends BaseActivity {
 
@@ -47,6 +48,7 @@ public class CreatingObservablesActivity extends BaseActivity {
                 classes = JustActivity.class;
                 break;
             case R.id.btn_operator_range:
+                classes = RangeAcitivity.class;
                 break;
             case R.id.btn_operator_repeat:
                 break;

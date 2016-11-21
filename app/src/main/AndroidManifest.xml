@@ -37,6 +37,8 @@
         </activity>
         <activity android:name=".creating.IntervalActivity">
         </activity>
+        <activity android:name=".creating.RangeAcitivity">
+        </activity>
     </application>
 
 </manifest>
