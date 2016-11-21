@@ -12,7 +12,7 @@ import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 
-public class RangeAcitivity extends BaseActivity {
+public class RangeActivity extends BaseActivity {
 
     private TextView mTvRangeResult;
     private StringBuilder sb = new StringBuilder();

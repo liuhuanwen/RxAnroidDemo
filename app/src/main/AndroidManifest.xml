@@ -29,19 +29,33 @@
             android:name=".creating.DeferActivity"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".creating.JustActivity">
+        <activity
+            android:name=".creating.JustActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".creating.EmptyAndErrorAndNeverActivity">
+        <activity
+            android:name=".creating.EmptyAndErrorAndNeverActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".creating.FromActivity">
+        <activity
+            android:name=".creating.FromActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".creating.IntervalActivity">
+        <activity
+            android:name=".creating.IntervalActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".creating.RangeAcitivity">
+        <activity
+            android:name=".creating.RangeActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".creating.RepeatActivity">
+        <activity
+            android:name=".creating.RepeatActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".creating.TimerActivity">
+        <activity
+            android:name=".creating.TimerActivity"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

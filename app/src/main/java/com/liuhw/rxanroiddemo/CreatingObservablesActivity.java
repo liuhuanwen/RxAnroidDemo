@@ -1,10 +1,7 @@
 package com.liuhw.rxanroiddemo;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.liuhw.rxanroiddemo.creating.CreateActivity;
@@ -13,7 +10,7 @@ import com.liuhw.rxanroiddemo.creating.EmptyAndErrorAndNeverActivity;
 import com.liuhw.rxanroiddemo.creating.FromActivity;
 import com.liuhw.rxanroiddemo.creating.IntervalActivity;
 import com.liuhw.rxanroiddemo.creating.JustActivity;
-import com.liuhw.rxanroiddemo.creating.RangeAcitivity;
+import com.liuhw.rxanroiddemo.creating.RangeActivity;
 import com.liuhw.rxanroiddemo.creating.RepeatActivity;
 import com.liuhw.rxanroiddemo.creating.TimerActivity;
 
@@ -50,7 +47,7 @@ public class CreatingObservablesActivity extends BaseActivity {
                 classes = JustActivity.class;
                 break;
             case R.id.btn_operator_range:
-                classes = RangeAcitivity.class;
+                classes = RangeActivity.class;
                 break;
             case R.id.btn_operator_repeat:
                 classes = RepeatActivity.class;
