@@ -57,6 +57,8 @@
             android:name=".creating.TimerActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity android:name=".TransformActivty">
+        </activity>
     </application>
 
 </manifest>
